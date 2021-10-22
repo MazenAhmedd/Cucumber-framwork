@@ -1,0 +1,3 @@
+stepDefinitions\LoginStepDefinitions.class
+cucumberOptions\JunitTestRunner.class
+cucumberOptions\TestNgTestRunner.class

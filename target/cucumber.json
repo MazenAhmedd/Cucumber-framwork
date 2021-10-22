@@ -1,0 +1,625 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-22T17:57:38.216Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6406500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.GlobalHooks.BeforeAllHoke()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1012400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.TaggedHooks.BeforeAllHoke()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "search for product and validate the results",
+        "description": "",
+        "id": "search-and-place-order-for-a-product;search-for-product-and-validate-the-results",
+        "after": [
+          {
+            "result": {
+              "duration": 998000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.TaggedHooks.afterAllHook()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1085620000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.GlobalHooks.afterAllHook()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 29712642700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on greenKart Landing page",
+            "match": {
+              "location": "stepDefinitions.SearchStepDefinitions.userIsOnGreenKartLandingPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2256947800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User search for a product Cucumber",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinitions.SearchStepDefinitions.userSearchForAProduct(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 114715600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"Cucumber\" results are displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 1
+                }
+              ],
+              "location": "stepDefinitions.SearchStepDefinitions.checkTheProductResultsAreDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SeleniumTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-22T17:58:11.602Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1022900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.GlobalHooks.BeforeAllHoke()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1000400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.TaggedHooks.BeforeAllHoke()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "search for product and then move to checkout page",
+        "description": "",
+        "id": "search-and-place-order-for-a-product;search-for-product-and-then-move-to-checkout-page",
+        "after": [
+          {
+            "result": {
+              "duration": 999800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.TaggedHooks.afterAllHook()"
+            }
+          },
+          {
+            "result": {
+              "duration": 734177400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.GlobalHooks.afterAllHook()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 29723566000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User is on greenKart Landing page",
+            "match": {
+              "location": "stepDefinitions.SearchStepDefinitions.userIsOnGreenKartLandingPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2194492200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User search for a product Brocolli",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brocolli",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinitions.SearchStepDefinitions.userSearchForAProduct(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 196392600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "add items to cart",
+            "match": {
+              "location": "stepDefinitions.SearchStepDefinitions.addItemsToCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 152509200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user proceeded to checkout page for purchase",
+            "match": {
+              "location": "stepDefinitions.CheckoutStepDefinitions.userProceededToCheckoutPageForPurchase()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35947400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "verify selected Brocolli product are displayed in checkout page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brocolli",
+                  "offset": 16
+                }
+              ],
+              "location": "stepDefinitions.CheckoutStepDefinitions.verifySelectedProductAreDisplayedInCheckoutPage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SeleniumTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-22T17:58:44.673Z",
+        "before": [
+          {
+            "result": {
+              "duration": 997500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.GlobalHooks.BeforeAllHoke()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1001200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.TaggedHooks.BeforeAllHoke()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "",
+        "description": "",
+        "id": "search-and-place-order-for-a-product;;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.TaggedHooks.afterAllHook()"
+            }
+          },
+          {
+            "result": {
+              "duration": 871161200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.GlobalHooks.afterAllHook()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 28125087600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User is on greenKart Landing page",
+            "match": {
+              "location": "stepDefinitions.SearchStepDefinitions.userIsOnGreenKartLandingPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2251579800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User search for a product Brinjal",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brinjal",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinitions.SearchStepDefinitions.userSearchForAProduct(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 254385800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "add items to cart",
+            "match": {
+              "location": "stepDefinitions.SearchStepDefinitions.addItemsToCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 236154300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user proceeded to checkout page for purchase",
+            "match": {
+              "location": "stepDefinitions.CheckoutStepDefinitions.userProceededToCheckoutPageForPurchase()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55328600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "verify selected Brinjal product are displayed in checkout page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brinjal",
+                  "offset": 16
+                }
+              ],
+              "location": "stepDefinitions.CheckoutStepDefinitions.verifySelectedProductAreDisplayedInCheckoutPage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SeleniumTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-22T17:59:16.499Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.GlobalHooks.BeforeAllHoke()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.TaggedHooks.BeforeAllHoke()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "",
+        "description": "",
+        "id": "search-and-place-order-for-a-product;;;3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.TaggedHooks.afterAllHook()"
+            }
+          },
+          {
+            "result": {
+              "duration": 728015400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.GlobalHooks.afterAllHook()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 28224049500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User is on greenKart Landing page",
+            "match": {
+              "location": "stepDefinitions.SearchStepDefinitions.userIsOnGreenKartLandingPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2288159300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User search for a product Beetroot",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Beetroot",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinitions.SearchStepDefinitions.userSearchForAProduct(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 411952200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "add items to cart",
+            "match": {
+              "location": "stepDefinitions.SearchStepDefinitions.addItemsToCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 202010500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user proceeded to checkout page for purchase",
+            "match": {
+              "location": "stepDefinitions.CheckoutStepDefinitions.userProceededToCheckoutPageForPurchase()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30794500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "verify selected Beetroot product are displayed in checkout page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Beetroot",
+                  "offset": 16
+                }
+              ],
+              "location": "stepDefinitions.CheckoutStepDefinitions.verifySelectedProductAreDisplayedInCheckoutPage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SeleniumTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-22T17:59:48.404Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.GlobalHooks.BeforeAllHoke()"
+            }
+          },
+          {
+            "result": {
+              "duration": 996800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.TaggedHooks.BeforeAllHoke()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "",
+        "description": "",
+        "id": "search-and-place-order-for-a-product;;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 999300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.TaggedHooks.afterAllHook()"
+            }
+          },
+          {
+            "result": {
+              "duration": 745342200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.GlobalHooks.afterAllHook()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 27543250500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User is on greenKart Landing page",
+            "match": {
+              "location": "stepDefinitions.SearchStepDefinitions.userIsOnGreenKartLandingPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2209961300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User search for a product Cucumber",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinitions.SearchStepDefinitions.userSearchForAProduct(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 315694000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "add items to cart",
+            "match": {
+              "location": "stepDefinitions.SearchStepDefinitions.addItemsToCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 131081200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user proceeded to checkout page for purchase",
+            "match": {
+              "location": "stepDefinitions.CheckoutStepDefinitions.userProceededToCheckoutPageForPurchase()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31196000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "verify selected Cucumber product are displayed in checkout page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 16
+                }
+              ],
+              "location": "stepDefinitions.CheckoutStepDefinitions.verifySelectedProductAreDisplayedInCheckoutPage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SeleniumTest"
+          }
+        ]
+      }
+    ],
+    "name": "Search and place order for a product",
+    "description": "",
+    "id": "search-and-place-order-for-a-product",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Search.feature",
+    "tags": []
+  }
+]

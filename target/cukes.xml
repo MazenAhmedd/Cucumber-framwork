@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="161.925">
+    <testcase classname="Search and place order for a product" name="search for product and validate the results" time="33.358">
+        <system-out>
+            <![CDATA[Given User is on greenKart Landing page.....................................passed
+Then User search for a product Cucumber.....................................passed
+Then "Cucumber" results are displayed.......................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Search and place order for a product" name="search for product and then move to checkout page" time="33.056">
+        <system-out>
+            <![CDATA[Given User is on greenKart Landing page.....................................passed
+Then User search for a product Brocolli.....................................passed
+And add items to cart.......................................................passed
+And user proceeded to checkout page for purchase............................passed
+Then verify selected Brocolli product are displayed in checkout page........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Search and place order for a product" name="" time="31.806">
+        <system-out>
+            <![CDATA[Given User is on greenKart Landing page.....................................passed
+Then User search for a product Brinjal......................................passed
+And add items to cart.......................................................passed
+And user proceeded to checkout page for purchase............................passed
+Then verify selected Brinjal product are displayed in checkout page.........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Search and place order for a product" name="_2" time="31.894">
+        <system-out>
+            <![CDATA[Given User is on greenKart Landing page.....................................passed
+Then User search for a product Beetroot.....................................passed
+And add items to cart.......................................................passed
+And user proceeded to checkout page for purchase............................passed
+Then verify selected Beetroot product are displayed in checkout page........passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Search and place order for a product" name="_3" time="30.982">
+        <system-out>
+            <![CDATA[Given User is on greenKart Landing page.....................................passed
+Then User search for a product Cucumber.....................................passed
+And add items to cart.......................................................passed
+And user proceeded to checkout page for purchase............................passed
+Then verify selected Cucumber product are displayed in checkout page........passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
