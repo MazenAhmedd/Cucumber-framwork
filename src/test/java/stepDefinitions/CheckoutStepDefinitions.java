@@ -15,7 +15,6 @@ public class CheckoutStepDefinitions extends DriverFactory {
     public void verifySelectedProductAreDisplayedInCheckoutPage(String product){
         cPage = new CheckoutPage(driver);
         Assert.assertTrue(cPage.getProductText().contains(product));
-        System.out.println(product);
     }
 
     @And("^user proceeded to checkout page for purchase$")
